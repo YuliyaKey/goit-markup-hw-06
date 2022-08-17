@@ -356,6 +356,7 @@ p {
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    height: 24px;
 }
 
 .modal-policy {
@@ -417,7 +418,6 @@ p {
 
 .policy-icon {
     fill: transparent;
-
     /* transition: fill 250ms var(--timing-function); */
 }
 
@@ -437,7 +437,14 @@ p {
     min-width: 200px;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px 52px; 
+    padding: 10px 52px;
+    
+    transition: box-shadow 250ms var(--timing-function);
+}
+
+.modal-form .button:hover,
+.modal-form .button:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .modal-textarea {
